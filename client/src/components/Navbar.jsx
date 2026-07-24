@@ -59,8 +59,8 @@ const Navbar = () => {
 
   const navLinks = [
     { path: '/', name: 'Home', icon: Home },
-    { path: '/blog', name: 'Blog', icon: BookOpen },
-    { path: '/projects', name: 'Projects', icon: Briefcase },
+    // { path: '/blog', name: 'Blog', icon: BookOpen },
+    { path: '/projects', name: 'Courses', icon: Briefcase },
     { path: '/skills', name: 'Skills', icon: Code2 },
     { path: '/contact', name: 'Contact', icon: Mail },
   ];
@@ -143,7 +143,7 @@ const Navbar = () => {
                       ? 'from-cyber-cyan via-cyber-purple to-cyber-pink'
                       : 'from-cyan-600 via-purple-600 to-pink-600'
                     } bg-clip-text text-transparent bg-[length:200%_auto] animate-gradient`}>
-                    Umair Khan
+                    Zeenat Ali
                   </span>
                 )}
                 {isMobile && (

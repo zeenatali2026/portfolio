@@ -1,4 +1,4 @@
-import  { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { useTheme } from '../context/ThemeContext';
 import { Link } from 'react-router-dom';
@@ -23,15 +23,15 @@ import {
 const projectsData = [
   {
     _id: '1',
-    title: 'Wuddy - Social + Professional Network',
-    description: 'Real-time chat, communities, and professional networking platform. Combines social features with team communication tools.',
-    fullDescription: 'Comprehensive social + professional networking web app where users can connect, chat, and collaborate in real time.',
-    technologies: ['React', 'Node.js', 'Express', 'MongoDB', 'Socket.io', 'Redux Toolkit', 'Tailwind CSS', 'JWT'],
-    imageUrl: 'https://placehold.co/600x400/1a1a2e/00F0FF?text=Wuddy',
+    title: 'Professional-Graphic Designer',
+    description: 'Real-time chat, communities, and professional Desingning platform.',
+    fullDescription: 'I am creating all social media poster,boster,flywers and thumbnail on canva, photoshop,Nanobanana and other platform.',
+    technologies: ['Canva', 'Nanobanana', 'Adobe Express', 'PicsArt', 'Ibis Paint X', 'Adobe Photoshop', 'Adobe Illustrator',],
+    imageUrl: './1.png',
     likes: 15,
-    comments: 12,
-    githubUrl: 'https://github.com/mrumairkhan74/Wuddy',
-    liveUrl: 'https://wuddy.vercel.app',
+    comments: 8,
+    githubUrl: '',
+    liveUrl: '',
     category: 'Full Stack',
     featured: true,
     date: '2024-02-01',
@@ -39,132 +39,37 @@ const projectsData = [
   },
   {
     _id: '2',
-    title: 'GeariX - Automotive E-commerce',
-    description: 'Full-featured e-commerce platform for automotive parts with Stripe payment integration.',
-    fullDescription: 'Complete e-commerce solution for automotive parts and accessories with secure payment processing.',
-    technologies: ['React', 'Node.js', 'Express', 'MongoDB', 'Stripe API', 'Redux', 'CSS3'],
-    imageUrl: 'https://placehold.co/600x400/1a1a2e/8B5CF6?text=GeariX',
+    title: 'Web Development',
+    description: 'I build modern, responsive and user-friendly websites that help business grow online clean code.Great design.Better experience.',
+    fullDescription: 'I build modern, responsive and user-friendly websites that help business grow online clean code.Great design.Better experience.And finally i used languages likes Html,CSS,Javascript.',
+    technologies: ['Html', 'Java script', 'CSS', 'Git& Github', 'PHP', 'Redux'],
+    imageUrl: './2.png',
     likes: 23,
     comments: 8,
-    githubUrl: 'https://github.com/mrumairkhan74/GeariX',
+    githubUrl: 'https://github.com/zeenatali2026/GeariX',
     liveUrl: 'https://gearix.vercel.app',
     category: 'E-commerce',
     featured: true,
     date: '2024-01-25',
     views: 980
   },
-  {
-    _id: '3',
-    title: 'We Chat - Real-time Messenger',
-    description: 'Real-time messaging app with one-to-one and group chat functionality.',
-    fullDescription: 'Modern messaging platform supporting one-to-one and group conversations with real-time updates.',
-    technologies: ['React', 'Express', 'MongoDB', 'Socket.io', 'Node.js', 'CSS3'],
-    imageUrl: 'https://placehold.co/600x400/1a1a2e/EC4899?text=We+Chat',
+  {    _id: '3',
+        title: 'Professional Video Editor',
+        description: 'Edit your story makeit epic.',
+        fullDescription: 'I creating professional video and editing video professional.',
+        technologies: ['Cupcut', 'Kavicut', 'After Affect',],
+    imageUrl: './3.png',
     likes: 34,
     comments: 15,
-    githubUrl: 'https://github.com/mrumairkhan74/WeChat',
+    githubUrl: 'https://github.com/zeenatali2026/WeChat',
     liveUrl: 'https://wechat.vercel.app',
     category: 'Real-time',
     featured: true,
     date: '2024-01-15',
     views: 2100
   },
-  {
-    _id: '4',
-    title: 'TrackMantis - Issue Tracker',
-    description: 'Project management tool with analytics dashboard for tracking issues and tasks.',
-    fullDescription: 'Comprehensive issue tracking and project management tool with analytics dashboard.',
-    technologies: ['MERN', 'JWT', 'Charts.js', 'Tailwind CSS', 'MongoDB', 'Express'],
-    imageUrl: 'https://placehold.co/600x400/1a1a2e/00F0FF?text=TrackMantis',
-    likes: 19,
-    comments: 6,
-    githubUrl: 'https://github.com/mrumairkhan74/TrackMantis',
-    liveUrl: 'https://trackmantis.vercel.app',
-    category: 'Productivity',
-    featured: false,
-    date: '2024-01-10',
-    views: 750
-  },
-  {
-    _id: '5',
-    title: 'C-News - News Aggregator',
-    description: 'Curated news platform aggregating content from multiple sources in one interface.',
-    fullDescription: 'Modern news aggregator that fetches and displays curated news from multiple APIs.',
-    technologies: ['React', 'REST API', 'CSS3', 'News API', 'Responsive Design'],
-    imageUrl: 'https://placehold.co/600x400/1a1a2e/8B5CF6?text=C-News',
-    likes: 12,
-    comments: 4,
-    githubUrl: 'https://github.com/mrumairkhan74/C-News',
-    liveUrl: 'https://cnews.vercel.app',
-    category: 'Frontend',
-    featured: false,
-    date: '2024-01-05',
-    views: 520
-  },
-  {
-    _id: '6',
-    title: 'Animated Background',
-    description: 'Interactive animated background component with modern visual effects.',
-    fullDescription: 'Reusable animated background component library featuring interactive visual effects.',
-    technologies: ['CSS3', 'HTML5', 'JavaScript', 'Canvas API'],
-    imageUrl: 'https://placehold.co/600x400/1a1a2e/EC4899?text=Animated+Background',
-    likes: 8,
-    comments: 2,
-    githubUrl: 'https://github.com/mrumairkhan74/animated-background',
-    liveUrl: 'https://animated-background.vercel.app',
-    category: 'Frontend',
-    featured: false,
-    date: '2023-12-28',
-    views: 380
-  },
-  {
-    _id: '7',
-    title: 'Responsive Gym Website',
-    description: 'Modern, fully responsive gym and fitness website template.',
-    fullDescription: 'Complete gym website template with responsive design and modern UI components.',
-    technologies: ['HTML5', 'CSS3', 'JavaScript', 'Responsive Design'],
-    imageUrl: 'https://placehold.co/600x400/1a1a2e/00F0FF?text=Gym+Website',
-    likes: 6,
-    comments: 1,
-    githubUrl: 'https://github.com/mrumairkhan74/gym-page-responsive',
-    liveUrl: 'https://gym-page.vercel.app',
-    category: 'Frontend',
-    featured: false,
-    date: '2023-12-20',
-    views: 290
-  },
-  {
-    _id: '8',
-    title: 'Interactive Game Page',
-    description: 'Engaging browser-based game page with interactive elements.',
-    fullDescription: 'Fun interactive game page with smooth animations and engaging gameplay mechanics.',
-    technologies: ['HTML5', 'CSS3', 'JavaScript', 'Game Logic'],
-    imageUrl: 'https://placehold.co/600x400/1a1a2e/8B5CF6?text=Game+Page',
-    likes: 5,
-    comments: 0,
-    githubUrl: 'https://github.com/mrumairkhan74/game-page',
-    liveUrl: 'https://game-page.vercel.app',
-    category: 'Frontend',
-    featured: false,
-    date: '2023-12-15',
-    views: 210
-  },
-  {
-    _id: '9',
-    title: 'Animated Responsive Navbar',
-    description: 'Modern navigation bar with smooth animations and responsive design.',
-    fullDescription: 'Highly customizable animated navigation bar component with mobile responsiveness.',
-    technologies: ['CSS3', 'HTML5', 'JavaScript', 'Flexbox/Grid'],
-    imageUrl: 'https://placehold.co/600x400/1a1a2e/EC4899?text=Navbar',
-    likes: 7,
-    comments: 3,
-    githubUrl: 'https://github.com/mrumairkhan74/navbar-resposive-and-animated',
-    liveUrl: 'https://animated-navbar.vercel.app',
-    category: 'Frontend',
-    featured: false,
-    date: '2023-12-10',
-    views: 340
-  }
+
+
 ];
 
 const Projects = () => {
@@ -268,11 +173,11 @@ const Projects = () => {
           className="text-center mb-6 md:mb-8"
         >
           <h1 className={`${isMobile ? 'text-3xl' : 'text-4xl md:text-5xl'} font-bold mb-2 md:mb-4`}>
-            <span className="gradient-text">All Projects</span>
+            <span className="gradient-text">All My Courses</span>
           </h1>
           {!isMobile && (
             <p className={`text-lg max-w-2xl mx-auto ${isDark ? 'text-text-secondary' : 'text-gray-600'}`}>
-              Explore my complete portfolio of web development projects
+              Explore my complete Corses of Graphics Designing
             </p>
           )}
         </motion.div>
@@ -281,9 +186,8 @@ const Projects = () => {
         <motion.div
           initial={{ opacity: 0, y: -20 }}
           animate={{ opacity: 1, y: 0 }}
-          className={`sticky ${isMobile ? 'top-16' : 'top-20'} z-20 mb-6 md:mb-8 p-3 md:p-4 rounded-xl md:rounded-2xl backdrop-blur-md ${
-            isDark ? 'bg-gray-900/80' : 'bg-white/80'
-          } shadow-lg`}
+          className={`sticky ${isMobile ? 'top-16' : 'top-20'} z-20 mb-6 md:mb-8 p-3 md:p-4 rounded-xl md:rounded-2xl backdrop-blur-md ${isDark ? 'bg-gray-900/80' : 'bg-white/80'
+            } shadow-lg`}
         >
           <div className="flex flex-col gap-3 md:gap-4">
             {/* Search Input - Full width on mobile */}
@@ -294,11 +198,10 @@ const Projects = () => {
                 placeholder={isMobile ? "Search projects..." : "Search by title, description, or technology..."}
                 value={searchTerm}
                 onChange={(e) => setSearchTerm(e.target.value)}
-                className={`w-full pl-9 md:pl-10 pr-8 md:pr-10 py-1.5 md:py-2 text-sm md:text-base rounded-lg border focus:outline-none focus:ring-2 focus:ring-cyber-cyan ${
-                  isDark
-                    ? 'bg-gray-800 border-gray-700 text-white'
-                    : 'bg-gray-100 border-gray-300 text-gray-900'
-                }`}
+                className={`w-full pl-9 md:pl-10 pr-8 md:pr-10 py-1.5 md:py-2 text-sm md:text-base rounded-lg border focus:outline-none focus:ring-2 focus:ring-cyber-cyan ${isDark
+                  ? 'bg-gray-800 border-gray-700 text-white'
+                  : 'bg-gray-100 border-gray-300 text-gray-900'
+                  }`}
               />
               {searchTerm && (
                 <button
@@ -314,13 +217,12 @@ const Projects = () => {
             <div className="flex flex-wrap gap-2">
               <button
                 onClick={() => setIsFilterOpen(!isFilterOpen)}
-                className={`flex items-center gap-1.5 md:gap-2 px-3 md:px-4 py-1.5 md:py-2 text-sm rounded-lg border transition-all ${
-                  isFilterOpen
-                    ? 'border-cyber-cyan bg-cyber-cyan/10 text-cyber-cyan'
-                    : isDark
+                className={`flex items-center gap-1.5 md:gap-2 px-3 md:px-4 py-1.5 md:py-2 text-sm rounded-lg border transition-all ${isFilterOpen
+                  ? 'border-cyber-cyan bg-cyber-cyan/10 text-cyber-cyan'
+                  : isDark
                     ? 'border-gray-700 hover:border-cyber-cyan'
                     : 'border-gray-300 hover:border-cyan-500'
-                }`}
+                  }`}
               >
                 <Filter size={isMobile ? 14 : 18} />
                 Filters
@@ -330,25 +232,23 @@ const Projects = () => {
               <div className="flex gap-1.5 md:gap-2">
                 <button
                   onClick={() => setViewMode('grid')}
-                  className={`p-1.5 md:p-2 rounded-lg transition-all ${
-                    viewMode === 'grid'
-                      ? 'bg-cyber-cyan text-white'
-                      : isDark
+                  className={`p-1.5 md:p-2 rounded-lg transition-all ${viewMode === 'grid'
+                    ? 'bg-cyber-cyan text-white'
+                    : isDark
                       ? 'bg-gray-800 hover:bg-gray-700'
                       : 'bg-gray-100 hover:bg-gray-200'
-                  }`}
+                    }`}
                 >
                   <Grid3x3 size={isMobile ? 16 : 18} />
                 </button>
                 <button
                   onClick={() => setViewMode('list')}
-                  className={`p-1.5 md:p-2 rounded-lg transition-all ${
-                    viewMode === 'list'
-                      ? 'bg-cyber-cyan text-white'
-                      : isDark
+                  className={`p-1.5 md:p-2 rounded-lg transition-all ${viewMode === 'list'
+                    ? 'bg-cyber-cyan text-white'
+                    : isDark
                       ? 'bg-gray-800 hover:bg-gray-700'
                       : 'bg-gray-100 hover:bg-gray-200'
-                  }`}
+                    }`}
                 >
                   <List size={isMobile ? 16 : 18} />
                 </button>
@@ -378,13 +278,12 @@ const Projects = () => {
                           <button
                             key={cat}
                             onClick={() => setSelectedCategory(cat)}
-                            className={`px-2 md:px-3 py-0.5 md:py-1 rounded-full text-xs md:text-sm capitalize transition-all ${
-                              selectedCategory === cat
-                                ? 'bg-gradient-to-r from-cyber-cyan to-cyber-purple text-white'
-                                : isDark
+                            className={`px-2 md:px-3 py-0.5 md:py-1 rounded-full text-xs md:text-sm capitalize transition-all ${selectedCategory === cat
+                              ? 'bg-gradient-to-r from-cyber-cyan to-cyber-purple text-white'
+                              : isDark
                                 ? 'bg-gray-800 hover:bg-gray-700'
                                 : 'bg-gray-100 hover:bg-gray-200'
-                            }`}
+                              }`}
                           >
                             {cat}
                           </button>
@@ -400,11 +299,10 @@ const Projects = () => {
                       <select
                         value={sortBy}
                         onChange={(e) => setSortBy(e.target.value)}
-                        className={`w-full px-2 md:px-3 py-1.5 md:py-2 text-sm rounded-lg border focus:outline-none focus:ring-2 focus:ring-cyber-cyan ${
-                          isDark
-                            ? 'bg-gray-800 border-gray-700 text-white'
-                            : 'bg-gray-100 border-gray-300 text-gray-900'
-                        }`}
+                        className={`w-full px-2 md:px-3 py-1.5 md:py-2 text-sm rounded-lg border focus:outline-none focus:ring-2 focus:ring-cyber-cyan ${isDark
+                          ? 'bg-gray-800 border-gray-700 text-white'
+                          : 'bg-gray-100 border-gray-300 text-gray-900'
+                          }`}
                       >
                         <option value="latest">Latest First</option>
                         <option value="oldest">Oldest First</option>
@@ -469,11 +367,10 @@ const Projects = () => {
                     layout
                     exit={{ opacity: 0, scale: 0.9 }}
                     whileHover={!isMobile ? { y: -8 } : {}}
-                    className={`group rounded-xl md:rounded-2xl overflow-hidden transition-all duration-300 ${
-                      isDark
-                        ? 'bg-gray-800/50 hover:bg-gray-800'
-                        : 'bg-white hover:shadow-xl'
-                    }`}
+                    className={`group rounded-xl md:rounded-2xl overflow-hidden transition-all duration-300 ${isDark
+                      ? 'bg-gray-800/50 hover:bg-gray-800'
+                      : 'bg-white hover:shadow-xl'
+                      }`}
                   >
                     <Link to={`/project/${project._id}`}>
                       <div className="relative overflow-hidden">
@@ -504,11 +401,10 @@ const Projects = () => {
                           {project.technologies.slice(0, isMobile ? 2 : 3).map((tech, idx) => (
                             <span
                               key={idx}
-                              className={`text-[10px] md:text-xs px-1.5 md:px-2 py-0.5 md:py-1 rounded-full ${
-                                isDark
-                                  ? 'bg-cyber-cyan/10 text-cyber-cyan'
-                                  : 'bg-cyan-100 text-cyan-700'
-                              }`}
+                              className={`text-[10px] md:text-xs px-1.5 md:px-2 py-0.5 md:py-1 rounded-full ${isDark
+                                ? 'bg-cyber-cyan/10 text-cyber-cyan'
+                                : 'bg-cyan-100 text-cyan-700'
+                                }`}
                             >
                               {tech}
                             </span>
@@ -545,7 +441,7 @@ const Projects = () => {
                 ))}
               </AnimatePresence>
             </motion.div>
-            
+
             {/* Load More Button for Mobile */}
             {isMobile && visibleCount < filteredProjects.length && (
               <div className="text-center mt-6 md:mt-8">
@@ -571,11 +467,10 @@ const Projects = () => {
                 variants={itemVariants}
                 layout
                 whileHover={!isMobile ? { x: 8 } : {}}
-                className={`p-3 md:p-4 rounded-xl md:rounded-2xl transition-all duration-300 ${
-                  isDark
-                    ? 'bg-gray-800/50 hover:bg-gray-800'
-                    : 'bg-white hover:shadow-lg'
-                }`}
+                className={`p-3 md:p-4 rounded-xl md:rounded-2xl transition-all duration-300 ${isDark
+                  ? 'bg-gray-800/50 hover:bg-gray-800'
+                  : 'bg-white hover:shadow-lg'
+                  }`}
               >
                 <Link to={`/project/${project._id}`} className="flex flex-col md:flex-row gap-3 md:gap-4">
                   <img
@@ -604,11 +499,10 @@ const Projects = () => {
                       {project.technologies.slice(0, isMobile ? 2 : 4).map((tech, idx) => (
                         <span
                           key={idx}
-                          className={`text-[10px] md:text-xs px-1.5 md:px-2 py-0.5 md:py-1 rounded-full ${
-                            isDark
-                              ? 'bg-cyber-cyan/10 text-cyber-cyan'
-                              : 'bg-cyan-100 text-cyan-700'
-                          }`}
+                          className={`text-[10px] md:text-xs px-1.5 md:px-2 py-0.5 md:py-1 rounded-full ${isDark
+                            ? 'bg-cyber-cyan/10 text-cyber-cyan'
+                            : 'bg-cyan-100 text-cyan-700'
+                            }`}
                         >
                           {tech}
                         </span>
@@ -646,9 +540,8 @@ const Projects = () => {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ delay: 0.3 }}
-          className={`mt-10 md:mt-12 p-4 md:p-6 rounded-xl md:rounded-2xl ${
-            isDark ? 'bg-gray-800/50' : 'bg-white'
-          } shadow-lg`}
+          className={`mt-10 md:mt-12 p-4 md:p-6 rounded-xl md:rounded-2xl ${isDark ? 'bg-gray-800/50' : 'bg-white'
+            } shadow-lg`}
         >
           <div className="grid grid-cols-2 md:grid-cols-4 gap-3 md:gap-4 text-center">
             <div>

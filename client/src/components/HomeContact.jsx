@@ -74,9 +74,9 @@ const HomeContact = () => {
   };
 
   const contactInfo = [
-    { icon: Mail, label: 'Email', value: 'mrumairkhan74@gmail.com', link: 'mailto:mrumairkhan74@gmail.com' },
-    { icon: Phone, label: 'Phone', value: '+92 347 6985088', link: 'tel:+923476985088' },
-    { icon: MapPin, label: 'Location', value: 'Jand, Attock, Pakistan', link: null },
+    { icon: Mail, label: 'Email', value: 'zeenatali2026@gmail.com', link: 'mailto:zeenatali2026@gmail.com' },
+    { icon: Phone, label: 'Phone', value: '+92 328 5638169', link: 'tel:+923285638169' },
+    { icon: MapPin, label: 'Location', value: 'Rangli, Attock, Pakistan', link: null },
     { icon: Clock, label: 'Response Time', value: 'Within 24 hours', link: null },
   ];
 

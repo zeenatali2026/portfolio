@@ -5,7 +5,7 @@ import HeroSection from '../components/HeroSection';
 import ProjectsSection from '../components/ProjectSection';
 import HomeSkills from '../components/HomeSkills';
 import HomeQuote from '../components/widgets/HomeQuotes';
-import HomeBlog from '../components/HomeBlog';
+// import HomeBlog from '../components/HomeBlog';
 import HomeContact from '../components/HomeContact';
 
 const Home = () => {
@@ -43,7 +43,7 @@ const Home = () => {
 
         <HomeSkills />
         <ProjectsSection />
-        <HomeBlog />
+        {/* <HomeBlog /> */}
         <HomeContact />
       </div>
     </div>

@@ -36,112 +36,40 @@ const SkillsPage = () => {
   // Limit skills shown on mobile
   const skillCategories = isMobile ? [
     {
-      title: 'Frontend Development',
+      title: 'Graphic Desingning',
       icon: Code2,
       color: '#00F0FF',
       skills: [
-        { name: 'React.js', level: 90, years: 3 },
-        { name: 'Tailwind CSS', level: 85, years: 2 },
-        { name: 'JavaScript', level: 70, years: 1.5 },
-        { name: 'HTML5/CSS3', level: 90, years: 4 }
-      ]
-    },
-    {
-      title: 'Backend Development',
-      icon: Server,
-      color: '#8B5CF6',
-      skills: [
-        { name: 'Node.js', level: 88, years: 3 },
-        { name: 'Express.js', level: 90, years: 3 },
-        { name: 'RESTful APIs', level: 92, years: 3 },
-        { name: 'JWT/Auth', level: 85, years: 2.5 }
-      ]
-    },
-    {
-      title: 'Database & DevOps',
-      icon: Database,
-      color: '#EC4899',
-      skills: [
-        { name: 'MongoDB', level: 88, years: 3 },
-        { name: 'Vercel', level: 85, years: 2.5 },
-        { name: 'Render', level: 85, years: 2.5 }
-      ]
-    },
-    {
-      title: 'Tools & Others',
-      icon: Terminal,
-      color: '#10B981',
-      skills: [
-        { name: 'Git/GitHub', level: 88, years: 3 },
-        { name: 'Postman', level: 85, years: 2.5 },
-        { name: 'VS Code', level: 90, years: 3 },
-        { name: 'Socket.io', level: 80, years: 2 }
+        { name: 'Canva', level: 95, years: 3 },
+        { name: 'Photoshop', level: 85, years: 2 },
+        { name: 'Adobe Illustrator', level: 70, years: 1.5 },
+        { name: 'PicArtX', level: 90, years: 4 }
       ]
     }
   ] : [
     {
-      title: 'Frontend Development',
+      title: 'Graphic Desingning',
       icon: Code2,
       color: '#00F0FF',
       skills: [
-        { name: 'React.js', level: 90, years: 3 },
-        { name: 'Vite.js', level: 75, years: 1.5 },
-        { name: 'Tailwind CSS', level: 85, years: 2 },
-        { name: 'Redux Toolkit', level: 80, years: 2 },
-        { name: 'JavaScript', level: 70, years: 1.5 },
-        { name: 'HTML5/CSS3', level: 90, years: 4 }
-      ]
-    },
-    {
-      title: 'Backend Development',
-      icon: Server,
-      color: '#8B5CF6',
-      skills: [
-        { name: 'Node.js', level: 88, years: 3 },
-        { name: 'Express.js', level: 90, years: 3 },
-        { name: 'RESTful APIs', level: 92, years: 3 },
-        { name: 'JWT/Auth', level: 85, years: 2.5 },
-        { name: 'Cloudinary', level: 85, years: 2.5 },
-        { name: 'Bcrypt', level: 85, years: 2.5 }
-      ]
-    },
-    {
-      title: 'Database & DevOps',
-      icon: Database,
-      color: '#EC4899',
-      skills: [
-        { name: 'MongoDB', level: 88, years: 3 },
-        { name: 'PostgreSQL', level: 75, years: 1.5 },
-        { name: 'Redis', level: 70, years: 1 },
-        { name: 'Docker', level: 65, years: 1 },
-        { name: 'Vercel', level: 85, years: 2.5 },
-        { name: 'Render', level: 85, years: 2.5 }
-      ]
-    },
-    {
-      title: 'Tools & Others',
-      icon: Terminal,
-      color: '#10B981',
-      skills: [
-        { name: 'Git/GitHub', level: 88, years: 3 },
-        { name: 'Postman', level: 85, years: 2.5 },
-        { name: 'VS Code', level: 90, years: 3 },
-        { name: 'Figma', level: 70, years: 1.5 },
-        { name: 'Socket.io', level: 80, years: 2 },
-        { name: 'Jest/Testing', level: 65, years: 1 }
+        { name: 'Canva', level: 95, years: 3 },
+        { name: 'Photoshop', level: 85, years: 2 },
+        { name: 'Adobe Illustrator', level: 70, years: 1.5 },
+        { name: 'PicArtX', level: 90, years: 4 }
       ]
     }
+
   ];
 
   // Show limited certifications on mobile
   const certifications = isMobile ? [
-    { name: 'MERN Stack Developer', issuer: 'DevelopersHub', date: '2024', icon: Award },
-    { name: 'Full Stack JavaScript', issuer: 'Mind Luster', date: '2024', icon: Award }
+    { name: 'Google AI Essentia', issuer: 'Mind Luster', date: '2026', icon: Award },
+    { name: 'Introductation to Generative AI', issuer: 'Mind Luster', date: '2026', icon: Award }
   ] : [
-    { name: 'MERN Stack Developer', issuer: 'DevelopersHub Corporations', date: '2024', icon: Award },
-    { name: 'Full Stack JavaScript', issuer: 'Mind Luster', date: '2024', icon: Award },
-    { name: 'Cisco Networking', issuer: 'Cisco', date: '2022', icon: Cpu },
-    { name: 'Optimizing MongoDB', issuer: 'Mongo Atlas', date: '2024', icon: Database }
+    { name: 'Google AI Essentia', issuer: 'Mind Luster', date: '2026', icon: Award },
+    { name: 'Introductation to Generative AI', issuer: 'Mind Luster', date: '2026', icon: Award },
+    { name: 'Google Prompting Essentials', issuer: 'Odemy', date: '2026', icon: Cpu },
+    { name: 'Typography', issuer: 'Mind Luster', date: '2026', icon: Database }
   ];
 
   const containerVariants = {
@@ -306,9 +234,9 @@ const SkillsPage = () => {
           className="mt-8 md:mt-12 grid grid-cols-2 md:grid-cols-4 gap-3 md:gap-4"
         >
           {[
-            { value: '12+', label: 'Projects', icon: Code2 },
-            { value: '10+', label: 'Technologies', icon: Cpu },
-            { value: '5+', label: 'Certifications', icon: Award },
+            { value: '5+', label: 'Projects', icon: Code2 },
+            { value: '15+', label: 'Technologies', icon: Cpu },
+            { value: '12+', label: 'Certifications', icon: Award },
             { value: '3+', label: 'Experience', icon: TrendingUp }
           ].map((stat, idx) => {
             const Icon = stat.icon;

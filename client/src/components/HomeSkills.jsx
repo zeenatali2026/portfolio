@@ -54,44 +54,43 @@ const HomeSkills = () => {
 
     // Limit skills shown on mobile
     const skills = isMobile ? [
-        { name: 'React.js', icon: Code2, level: 90, color: '#00F0FF', years: 3 },
-        { name: 'Node.js', icon: Server, level: 88, color: '#8B5CF6', years: 3 },
-        { name: 'Express.js', icon: Zap, level: 90, color: '#EC4899', years: 3 },
-        { name: 'MongoDB', icon: Database, level: 88, color: '#10B981', years: 3 },
+        { name: 'Graphic Designing', icon: Code2, level: 95, color: '#00F0FF', years: 3 },
+        { name: 'Typhography', icon: Server, level: 77, color: '#8B5CF6', years: 3 },
+        { name: 'Video Editing', icon: Zap, level: 90, color: '#EC4899', years: 3 },
+        { name: 'Digital Marketing', icon: Database, level: 91, color: '#10B981', years: 3 },
+        { name: 'Freelancing', icon: Globe, level: 85, color: '#00F0FF', years: 2 },
     ] : [
-        { name: 'React.js', icon: Code2, level: 90, color: '#00F0FF', years: 3 },
-        { name: 'Node.js', icon: Server, level: 88, color: '#8B5CF6', years: 3 },
-        { name: 'Express.js', icon: Zap, level: 90, color: '#EC4899', years: 3 },
-        { name: 'MongoDB', icon: Database, level: 88, color: '#10B981', years: 3 },
-        { name: 'Tailwind CSS', icon: Globe, level: 85, color: '#00F0FF', years: 2 },
-        { name: 'Socket.io', icon: Cloud, level: 80, color: '#8B5CF6', years: 2 },
-        { name: 'Git/GitHub', icon: GitBranch, level: 88, color: '#EC4899', years: 3 },
-        { name: 'REST APIs', icon: Terminal, level: 92, color: '#10B981', years: 3 },
+        { name: 'Graphic Designing', icon: Code2, level: 95, color: '#00F0FF', years: 3 },
+        { name: 'Typhography', icon: Server, level: 77, color: '#8B5CF6', years: 3 },
+        { name: 'Video Editing', icon: Zap, level: 90, color: '#EC4899', years: 3 },
+        { name: 'Digital Marketing', icon: Database, level: 91, color: '#10B981', years: 3 },
+        { name: 'Freelancing', icon: Globe, level: 85, color: '#00F0FF', years: 2 },
+
     ];
 
     const featuredSkills = [
-        { name: 'MERN Stack', description: 'Full-stack development with MongoDB, Express, React, Node.js', icon: Code2 },
-        { name: 'Real-time Apps', description: 'Socket.io, WebSockets, live chat applications', icon: Zap },
-        { name: 'API Integration', description: 'RESTful APIs, Third-party services, Payment gateways', icon: Cloud },
-        { name: 'Authentication', description: 'JWT, OAuth, bcrypt, session management', icon: Lock },
+        { name: 'Graphic Designing', description: 'Professional Graphic Design', icon: Code2 },
+        { name: 'Web Development', description: 'Web Development', icon: Zap },
+        { name: 'Video Editing', description: 'Professional Video Editing', icon: Cloud },
+        { name: 'Typhography', description: 'Typhography', icon: Lock },
     ];
 
     const myOtherSkills = [
-        { name: 'TypeScript' },
-        { name: 'Next.js' },
-        { name: 'Python' },
-        { name: 'PostgreSQL' },
-        { name: 'Redis' },
-        { name: 'Docker' },
-        { name: 'Figma' },
-        { name: 'Jest' },
-        { name: 'Webpack' },
-        { name: 'Vite' },
-        { name: 'AWS' },
-        { name: 'Vercel' },
-        { name: 'Stripe API' },
-        { name: 'Firebase' },
-        { name: 'Redux Toolkit' },
+        { name: 'Youtube Thumbnails' },
+        { name: 'Banners' },
+        { name: 'Posters' },
+        { name: 'Invitation card' },
+        { name: 'Logo Designing' },
+        { name: 'Menu Card' },
+        { name: 'T-shirt Designing' },
+        { name: 'Flyer' },
+        { name: 'Brochure' },
+        { name: 'Standee' },
+        { name: 'Billboard' },
+        { name: 'Visiting Card' },
+        { name: 'Social Media Post' },
+        { name: 'Packaging DEsign' },
+        { name: 'Web Banner' },
     ];
 
     const containerVariants = {
@@ -276,8 +275,8 @@ const HomeSkills = () => {
                     className="mt-6 md:mt-8 grid grid-cols-2 md:grid-cols-4 gap-2 md:gap-4"
                 >
                     {[
-                        { value: '12+', label: 'Projects', icon: Code2 },
-                        { value: '10+', label: 'Technologies', icon: Cpu },
+                        { value: '5+', label: 'Projects', icon: Code2 },
+                        { value: '6+', label: 'Technologies', icon: Cpu },
                         { value: '5+', label: 'Certifications', icon: Award },
                         { value: '3+', label: 'Experience', icon: TrendingUp }
                     ].map((stat, idx) => {

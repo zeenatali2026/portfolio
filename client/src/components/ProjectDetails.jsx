@@ -2,10 +2,10 @@ import React, { useState, useEffect } from 'react';
 import { useParams, useNavigate, Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import { useTheme } from '../context/ThemeContext';
-import { 
-  ExternalLink, 
-  Heart, 
-  MessageCircle, 
+import {
+  ExternalLink,
+  Heart,
+  MessageCircle,
   Calendar,
   User,
   ArrowLeft,
@@ -31,111 +31,81 @@ import {
 const projectsData = [
   {
     _id: '1',
-    title: 'Wuddy - Social + Professional Network',
-    description: 'Real-time chat, communities, and professional networking platform.',
-    fullDescription: `Wuddy is a comprehensive social + professional networking web app where users can connect, chat, and collaborate in real time. It combines features of social platforms and team communication tools, making it easy for professionals to network and share ideas.
-
-Key Features:
-• Real-time messaging with Socket.io
-• User authentication with JWT
-• Create and join communities
-• Share posts and media
-• Professional networking tools
-• Responsive design for all devices
-
-The platform handles thousands of concurrent users with optimized database queries and real-time updates.`,
-    technologies: ['React', 'Node.js', 'Express', 'MongoDB', 'Socket.io', 'Redux Toolkit', 'Tailwind CSS', 'JWT'],
-    imageUrl: 'https://placehold.co/800x500/1a1a2e/00F0FF?text=Wuddy',
+    title: 'Professional-Graphic Designer',
+    description: 'Real-time chat, communities, and professional Desingning platform.',
+    fullDescription: 'I am creating all social media poster,boster,flywers and thumbnail on canva, photoshop,Nanobanana and other platform.',
+    technologies: ['Canva', 'Nanobanana', 'Adobe Express', 'PicsArt', 'Ibis Paint X', 'Adobe Photoshop', 'Adobe Illustrator',],
+    imageUrl: './1',
     images: [
-      'https://placehold.co/800x500/1a1a2e/00F0FF?text=Wuddy+Home',
-      'https://placehold.co/800x500/1a1a2e/8B5CF6?text=Wuddy+Chat',
-      'https://placehold.co/800x500/1a1a2e/EC4899?text=Wuddy+Profile'
+   'https://placehold.co/800x500/1a1a2e/EC4899?text=Professional+Graphic+Designer',
+
     ],
     likes: 15,
     comments: [
       { id: 1, author: 'TechRecruiter', text: 'Great platform! The real-time chat works flawlessly.', date: '2024-02-10', avatar: 'https://placehold.co/40x40' },
       { id: 2, author: 'DevCommunity', text: 'Love the professional networking features.', date: '2024-02-05', avatar: 'https://placehold.co/40x40' }
     ],
-    githubUrl: 'https://github.com/mrumairkhan74/Wuddy',
+    githubUrl: 'https://github.com/zeenatali2026/',
     liveUrl: 'https://wuddy.vercel.app',
-    category: 'Full Stack',
+    category: 'Professional Graphic Designer',
     featured: true,
-    date: '2024-02-01',
-    duration: '3 months',
-    role: 'Full Stack Developer'
+    date: '2026-02-01',
+    duration: '6 months',
+    role: 'Professional Graphic Designer'
   },
   {
     _id: '2',
-    title: 'GeariX - Automotive E-commerce',
-    description: 'Full-featured e-commerce platform for automotive parts with Stripe payment integration.',
-    fullDescription: `GeariX is a complete e-commerce solution for automotive parts and accessories. Features include product catalog, shopping cart, user authentication, order management, and secure Stripe payment integration.
-
-Key Features:
-• Product browsing with filters
-• Shopping cart functionality
-• Secure checkout with Stripe
-• User accounts and order history
-• Admin dashboard for inventory
-• Email notifications for orders`,
-    technologies: ['React', 'Node.js', 'Express', 'MongoDB', 'Stripe API', 'Redux', 'CSS3'],
-    imageUrl: 'https://placehold.co/800x500/1a1a2e/8B5CF6?text=GeariX',
+    title: 'Web Development',
+    description: 'I build modern, responsive and user-friendly websites that help business grow online clean code.Great design.Better experience.',
+    fullDescription: 'I build modern, responsive and user-friendly websites that help business grow online clean code.Great design.Better experience.And finally i used languages likes Html,CSS,Javascript.',
+    technologies: ['Html', 'Java script', 'CSS', 'Git& Github', 'PHP', 'Redux'],
+    imageUrl: '',
     images: [
-      'https://placehold.co/800x500/1a1a2e/8B5CF6?text=GeariX+Products',
-      'https://placehold.co/800x500/1a1a2e/00F0FF?text=GeariX+Cart',
-      'https://placehold.co/800x500/1a1a2e/EC4899?text=GeariX+Checkout'
+         'https://placehold.co/800x500/1a1a2e/EC4899?text=Web+Development',
+
     ],
     likes: 23,
     comments: [
       { id: 1, author: 'ShopOwner', text: 'The payment integration is seamless!', date: '2024-01-28', avatar: 'https://placehold.co/40x40' }
     ],
-    githubUrl: 'https://github.com/mrumairkhan74/GeariX',
+    githubUrl: 'https://github.com/zeenatali2026/',
     liveUrl: 'https://gearix.vercel.app',
     category: 'E-commerce',
     featured: true,
-    date: '2024-01-25',
+    date: '2026-01-25',
     duration: '2 months',
-    role: 'Lead Developer'
+    role: 'Professional Video Editor'
   },
   {
     _id: '3',
-    title: 'We Chat - Real-time Messenger',
-    description: 'Real-time messaging app with one-to-one and group chat functionality.',
-    fullDescription: `We Chat is a modern messaging platform supporting both one-to-one and group conversations. Features include real-time message delivery, typing indicators, online status, and message history.
-
-Key Features:
-• One-to-one and group messaging
-• Real-time updates with Socket.io
-• User presence indicators
-• Typing indicators
-• Message history
-• File sharing capabilities`,
-    technologies: ['React', 'Express', 'MongoDB', 'Socket.io', 'Node.js', 'CSS3'],
-    imageUrl: 'https://placehold.co/800x500/1a1a2e/EC4899?text=We+Chat',
+    title: 'Professional Video Editor',
+    description: 'Edit your story makeit epic.',
+    fullDescription: 'I creating professional video and editing video professional.',
+    technologies: ['Cupcut', 'Kavicut', 'After Affect',],
+    imageUrl: './3.png',
     images: [
-      'https://placehold.co/800x500/1a1a2e/EC4899?text=We+Chat+Chat',
-      'https://placehold.co/800x500/1a1a2e/00F0FF?text=We+Chat+Groups',
-      'https://placehold.co/800x500/1a1a2e/8B5CF6?text=We+Chat+Profile'
+      'https://placehold.co/800x500/1a1a2e/EC4899?text=Professional+Video+Editor',
     ],
     likes: 34,
     comments: [
       { id: 1, author: 'MessengerUser', text: 'Super fast real-time updates!', date: '2024-01-20', avatar: 'https://placehold.co/40x40' },
       { id: 2, author: 'TeamLead', text: 'Group chat works perfectly.', date: '2024-01-18', avatar: 'https://placehold.co/40x40' }
     ],
-    githubUrl: 'https://github.com/mrumairkhan74/WeChat',
+    githubUrl: 'https://github.com/zeenatali2026/WeChat',
     liveUrl: 'https://wechat.vercel.app',
     category: 'Real-time',
     featured: true,
-    date: '2024-01-15',
+    date: '2026-01-15',
     duration: '1.5 months',
-    role: 'Full Stack Developer'
+    role: 'Professional Video Editor'
   }
 ];
 
 // Clock component
 const Clock = ({ size, className }) => (
   <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className={className}>
-    <circle cx="12" cy="12" r="10"/>
-    <polyline points="12 6 12 12 16 14"/>
+    <circle cx="12" cy="12" r="10" />
+    <polyline points="12 6 12 12 16 14" />
   </svg>
 );
 
@@ -257,11 +227,10 @@ const ProjectDetailsPage = () => {
           initial={{ opacity: 0, x: -20 }}
           animate={{ opacity: 1, x: 0 }}
           onClick={() => navigate('/')}
-          className={`flex items-center gap-1.5 md:gap-2 mb-4 md:mb-6 px-3 md:px-4 py-1.5 md:py-2 rounded-lg transition-all duration-300 text-sm md:text-base ${
-            isDark
-              ? 'bg-white/5 hover:bg-white/10 text-text-secondary'
-              : 'bg-gray-100 hover:bg-gray-200 text-gray-600'
-          }`}
+          className={`flex items-center gap-1.5 md:gap-2 mb-4 md:mb-6 px-3 md:px-4 py-1.5 md:py-2 rounded-lg transition-all duration-300 text-sm md:text-base ${isDark
+            ? 'bg-white/5 hover:bg-white/10 text-text-secondary'
+            : 'bg-gray-100 hover:bg-gray-200 text-gray-600'
+            }`}
         >
           <ArrowLeft size={isMobile ? 14 : 18} />
           Back to Projects
@@ -278,14 +247,13 @@ const ProjectDetailsPage = () => {
             >
               {/* Main Image */}
               <div
-                className={`rounded-xl md:rounded-2xl overflow-hidden mb-3 md:mb-4 ${
-                  isDark ? 'bg-gray-800' : 'bg-white'
-                } shadow-xl`}
+                className={`rounded-xl md:rounded-2xl overflow-hidden mb-3 md:mb-4 ${isDark ? 'bg-gray-800' : 'bg-white'
+                  } shadow-xl`}
               >
                 <img
                   src={project.images?.[activeImage] || project.imageUrl}
                   alt={project.title}
-                  className="w-full h-auto object-cover"
+                  className="w-full h-auto object-fit"
                 />
               </div>
 
@@ -296,13 +264,12 @@ const ProjectDetailsPage = () => {
                     <button
                       key={idx}
                       onClick={() => setActiveImage(idx)}
-                      className={`flex-shrink-0 w-14 h-14 md:w-20 md:h-20 rounded-lg overflow-hidden border-2 transition-all ${
-                        activeImage === idx
-                          ? 'border-cyber-cyan'
-                          : isDark
+                      className={`flex-shrink-0 w-14 h-14 md:w-20 md:h-20 rounded-lg overflow-hidden border-2 transition-all ${activeImage === idx
+                        ? 'border-cyber-cyan'
+                        : isDark
                           ? 'border-transparent hover:border-cyber-cyan/50'
                           : 'border-gray-200 hover:border-cyan-400'
-                      }`}
+                        }`}
                     >
                       <img src={img} alt={`View ${idx + 1}`} className="w-full h-full object-cover" />
                     </button>
@@ -322,22 +289,13 @@ const ProjectDetailsPage = () => {
             {/* Title & Category */}
             <div>
               <div className="flex items-center gap-1.5 md:gap-2 mb-1.5 md:mb-2 flex-wrap">
-                <span
-                  className={`px-2 md:px-3 py-0.5 md:py-1 rounded-full text-[10px] md:text-xs font-medium ${
-                    isDark
-                      ? 'bg-cyber-cyan/20 text-cyber-cyan'
-                      : 'bg-cyan-100 text-cyan-700'
-                  }`}
-                >
-                  {project.category}
-                </span>
+
                 {project.featured && (
                   <span
-                    className={`px-2 md:px-3 py-0.5 md:py-1 rounded-full text-[10px] md:text-xs font-medium ${
-                      isDark
-                        ? 'bg-cyber-pink/20 text-cyber-pink'
-                        : 'bg-pink-100 text-pink-700'
-                    }`}
+                    className={`px-2 md:px-3 py-0.5 md:py-1 rounded-full text-[10px] md:text-xs font-medium ${isDark
+                      ? 'bg-cyber-pink/20 text-cyber-pink'
+                      : 'bg-pink-100 text-pink-700'
+                      }`}
                   >
                     Featured
                   </span>
@@ -381,11 +339,10 @@ const ProjectDetailsPage = () => {
                 {(isMobile ? project.technologies.slice(0, 6) : project.technologies).map((tech, idx) => (
                   <span
                     key={idx}
-                    className={`flex items-center gap-0.5 md:gap-1 px-1.5 md:px-3 py-0.5 md:py-1 rounded-full text-[10px] md:text-sm ${
-                      isDark
-                        ? 'bg-cyber-cyan/10 text-cyber-cyan border border-cyber-cyan/30'
-                        : 'bg-cyan-100 text-cyan-700 border border-cyan-300'
-                    }`}
+                    className={`flex items-center gap-0.5 md:gap-1 px-1.5 md:px-3 py-0.5 md:py-1 rounded-full text-[10px] md:text-sm ${isDark
+                      ? 'bg-cyber-cyan/10 text-cyber-cyan border border-cyber-cyan/30'
+                      : 'bg-cyan-100 text-cyan-700 border border-cyan-300'
+                      }`}
                   >
                     {getTechIcon(tech)}
                     {tech}
@@ -400,11 +357,10 @@ const ProjectDetailsPage = () => {
                 href={project.githubUrl}
                 target="_blank"
                 rel="noopener noreferrer"
-                className={`flex-1 px-3 md:px-6 py-1.5 md:py-3 text-sm md:text-base rounded-full font-semibold flex items-center justify-center gap-1.5 md:gap-2 transition-all duration-300 ${
-                  isDark
-                    ? 'bg-gray-800 text-white hover:bg-gray-700'
-                    : 'bg-gray-800 text-white hover:bg-gray-700'
-                }`}
+                className={`flex-1 px-3 md:px-6 py-1.5 md:py-3 text-sm md:text-base rounded-full font-semibold flex items-center justify-center gap-1.5 md:gap-2 transition-all duration-300 ${isDark
+                  ? 'bg-gray-800 text-white hover:bg-gray-700'
+                  : 'bg-gray-800 text-white hover:bg-gray-700'
+                  }`}
               >
                 View Code
               </a>
@@ -429,13 +385,12 @@ const ProjectDetailsPage = () => {
             <div className="flex items-center justify-between pt-3 md:pt-4 border-t" style={{ borderColor: isDark ? 'rgba(255,255,255,0.1)' : 'rgba(0,0,0,0.1)' }}>
               <button
                 onClick={handleLike}
-                className={`flex items-center gap-1.5 md:gap-2 px-2 md:px-4 py-1 md:py-2 rounded-full transition-all duration-300 text-sm md:text-base ${
-                  liked
-                    ? 'text-cyber-pink'
-                    : isDark
+                className={`flex items-center gap-1.5 md:gap-2 px-2 md:px-4 py-1 md:py-2 rounded-full transition-all duration-300 text-sm md:text-base ${liked
+                  ? 'text-cyber-pink'
+                  : isDark
                     ? 'text-text-secondary hover:text-cyber-pink'
                     : 'text-gray-600 hover:text-pink-600'
-                }`}
+                  }`}
               >
                 <Heart size={isMobile ? 16 : 20} fill={liked ? '#EC4899' : 'none'} />
                 <span>{likesCount} Likes</span>
@@ -444,11 +399,10 @@ const ProjectDetailsPage = () => {
               <div className="relative">
                 <button
                   onClick={() => setShowShareMenu(!showShareMenu)}
-                  className={`flex items-center gap-1.5 md:gap-2 px-2 md:px-4 py-1 md:py-2 rounded-full transition-all duration-300 text-sm md:text-base ${
-                    isDark
-                      ? 'text-text-secondary hover:text-cyber-cyan'
-                      : 'text-gray-600 hover:text-cyan-600'
-                  }`}
+                  className={`flex items-center gap-1.5 md:gap-2 px-2 md:px-4 py-1 md:py-2 rounded-full transition-all duration-300 text-sm md:text-base ${isDark
+                    ? 'text-text-secondary hover:text-cyber-cyan'
+                    : 'text-gray-600 hover:text-cyan-600'
+                    }`}
                 >
                   <Share2 size={isMobile ? 16 : 18} />
                   Share
@@ -456,9 +410,8 @@ const ProjectDetailsPage = () => {
 
                 {showShareMenu && (
                   <div
-                    className={`absolute right-0 mt-2 p-1.5 md:p-2 rounded-lg shadow-xl z-10 ${
-                      isDark ? 'bg-gray-800' : 'bg-white'
-                    }`}
+                    className={`absolute right-0 mt-2 p-1.5 md:p-2 rounded-lg shadow-xl z-10 ${isDark ? 'bg-gray-800' : 'bg-white'
+                      }`}
                   >
                     <button
                       onClick={handleCopyLink}
@@ -479,9 +432,8 @@ const ProjectDetailsPage = () => {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, delay: 0.4 }}
-          className={`mt-8 md:mt-12 p-4 md:p-6 rounded-xl md:rounded-2xl ${
-            isDark ? 'bg-gray-800/50' : 'bg-white'
-          }`}
+          className={`mt-8 md:mt-12 p-4 md:p-6 rounded-xl md:rounded-2xl ${isDark ? 'bg-gray-800/50' : 'bg-white'
+            }`}
         >
           <h3 className={`text-base md:text-xl font-semibold mb-4 md:mb-6 flex items-center gap-1.5 md:gap-2 ${isDark ? 'text-white' : 'text-gray-900'}`}>
             <MessageCircle size={isMobile ? 16 : 20} className="text-cyber-cyan" />
@@ -496,11 +448,10 @@ const ProjectDetailsPage = () => {
                 placeholder="Your name (optional)"
                 value={commentAuthor}
                 onChange={(e) => setCommentAuthor(e.target.value)}
-                className={`flex-1 px-3 md:px-4 py-1.5 md:py-2 text-sm md:text-base rounded-lg border focus:outline-none focus:ring-2 focus:ring-cyber-cyan ${
-                  isDark
-                    ? 'bg-gray-700 border-gray-600 text-white focus:border-cyber-cyan'
-                    : 'bg-gray-50 border-gray-300 text-gray-900 focus:border-cyan-500'
-                }`}
+                className={`flex-1 px-3 md:px-4 py-1.5 md:py-2 text-sm md:text-base rounded-lg border focus:outline-none focus:ring-2 focus:ring-cyber-cyan ${isDark
+                  ? 'bg-gray-700 border-gray-600 text-white focus:border-cyber-cyan'
+                  : 'bg-gray-50 border-gray-300 text-gray-900 focus:border-cyan-500'
+                  }`}
               />
             </div>
             <div className="flex gap-2 md:gap-3">
@@ -509,11 +460,10 @@ const ProjectDetailsPage = () => {
                 value={newComment}
                 onChange={(e) => setNewComment(e.target.value)}
                 rows={isMobile ? 2 : 3}
-                className={`flex-1 px-3 md:px-4 py-1.5 md:py-2 text-sm md:text-base rounded-lg border focus:outline-none focus:ring-2 focus:ring-cyber-cyan resize-none ${
-                  isDark
-                    ? 'bg-gray-700 border-gray-600 text-white focus:border-cyber-cyan'
-                    : 'bg-gray-50 border-gray-300 text-gray-900 focus:border-cyan-500'
-                }`}
+                className={`flex-1 px-3 md:px-4 py-1.5 md:py-2 text-sm md:text-base rounded-lg border focus:outline-none focus:ring-2 focus:ring-cyber-cyan resize-none ${isDark
+                  ? 'bg-gray-700 border-gray-600 text-white focus:border-cyber-cyan'
+                  : 'bg-gray-50 border-gray-300 text-gray-900 focus:border-cyan-500'
+                  }`}
               />
               <button
                 type="submit"
@@ -534,9 +484,8 @@ const ProjectDetailsPage = () => {
               comments.slice(0, isMobile ? 3 : comments.length).map((comment) => (
                 <div
                   key={comment.id}
-                  className={`p-3 md:p-4 rounded-lg ${
-                    isDark ? 'bg-gray-700/50' : 'bg-gray-50'
-                  }`}
+                  className={`p-3 md:p-4 rounded-lg ${isDark ? 'bg-gray-700/50' : 'bg-gray-50'
+                    }`}
                 >
                   <div className="flex justify-between items-start mb-1.5 md:mb-2">
                     <div className="flex items-center gap-1.5 md:gap-2">

@@ -2,8 +2,8 @@ import React, { useEffect, useState } from 'react';
 import { motion } from 'framer-motion';
 import { useTheme } from '../context/ThemeContext';
 import { useMobileOptimization } from '../hooks/useMobileOptimization';
-import profileImg from '../../public/blue-bg-pfp.jpg'
-import resume from '../../public/UmairKhan-MERN-Developer.pdf'
+import profileImg from '../../public/profile.jpeg'
+// import resume from '../../public/UmairKhan-MERN-Developer.pdf'
 import {
     Mail,
     Download,
@@ -61,28 +61,23 @@ const HeroSection = () => {
     };
 
     const stats = [
-        { value: '3+', label: 'Years Experience', icon: Briefcase },
-        { value: '15+', label: 'Projects Completed', icon: Code2 },
-        { value: '5+', label: 'Happy Clients', icon: Users },
-        { value: '10+', label: 'Technologies', icon: Database },
+        { value: '3+', label: 'Year Experience', icon: Briefcase },
+        { value: '5', label: 'Projects Completed', icon: Code2 },
+        { value: '5', label: 'Happy Clients', icon: Users },
+        { value: '6', label: 'Technologies', icon: Database },
     ];
 
     const personalInfo = [
-        { icon: MapPin, label: 'Location', value: 'Jand, Attock' },
-        { icon: GraduationCap, label: 'Education', value: 'B.S. Software Engineering' },
-        { icon: Award, label: 'Certifications', value: 'MERN Stack, FullStack' },
+        { icon: MapPin, label: 'Location', value: 'Rangli, Attock' },
+        { icon: GraduationCap, label: 'Education', value: 'Intermediate' },
+        { icon: Award, label: 'Certifications', value: 'Professional Graphics Designing' },
     ];
 
     const MySkills = [
-        'React',
-        'Node.js',
-        'ExpressJs',
-        'MongoDB',
-        'Cloudinary',
-        'JavaScript',
-        'Brevo Mail',
-        'Authentication',
-        '3rd Party Api',
+        'Graphics Designing',
+        "Canva",
+        'Video Editing',
+        'Digital Marketing'
     ]
 
     return (
@@ -141,11 +136,11 @@ const HeroSection = () => {
                         {/* Name & Title */}
                         <div>
                             <h1 className={`${isMobile ? 'text-4xl' : 'text-5xl md:text-6xl lg:text-7xl'} font-bold mb-3 md:mb-4`}>
-                                <span className="gradient-text">Umair Khan</span>
+                                <span className="gradient-text">Zeenat Ali</span>
                             </h1>
                             <div className="flex items-center gap-2 md:gap-3 flex-wrap">
                                 <span className={`${isMobile ? 'text-lg' : 'text-xl md:text-2xl'} ${isDark ? 'text-text-secondary' : 'text-gray-600'}`}>
-                                    Full Stack Developer
+                                    Professional Graphic Designer & Video Editor 
                                 </span>
                                 <span className={`px-2 md:px-3 py-0.5 md:py-1 rounded-full text-xs md:text-sm ${isDark ? 'bg-cyber-cyan/20 text-cyber-cyan' : 'bg-cyan-100 text-cyan-700'}`}>
                                     AI Specialist
@@ -156,8 +151,8 @@ const HeroSection = () => {
                         {/* Description - shorter on mobile */}
                         <p className={`${isMobile ? 'text-sm' : 'text-lg'} ${isDark ? 'text-text-secondary' : 'text-gray-600'} leading-relaxed`}>
                             {isMobile 
-                                ? "Building cutting-edge web applications with AI integration. Specialized in MERN stack and modern web solutions."
-                                : "Building cutting-edge web applications with AI integration. Specialized in MERN stack, cloud architecture, and creating seamless digital experiences that define the future of technology."
+                                ? "I help business grow with creative design and modern websites.Expert in Logo Design,Typography,Social Media Content,Video Editing,and Responsive Web Development.Also skilled in google workspace tools for smooth project management and collaboration."
+                                : "I help business grow with creative design and modern websites.Expert in Logo Design,Typography,Social Media Content,Video Editing,and Responsive Web Development.Also skilled in google workspace tools for smooth project management and collaboration."
                             }
                         </p>
 
@@ -179,7 +174,7 @@ const HeroSection = () => {
                         {/* CTA Buttons - smaller on mobile */}
                         <div className="flex flex-wrap gap-3 md:gap-4 pt-3 md:pt-4">
                             <motion.a
-                                href={resume}
+                                // href={resume}
                                 download
                                 whileHover={!isMobile ? { scale: 1.05 } : {}}
                                 whileTap={{ scale: 0.95 }}
@@ -245,7 +240,7 @@ const HeroSection = () => {
                                     <div className={`${isMobile ? 'w-24 h-24' : 'w-32 h-32'} mx-auto rounded-full overflow-hidden border-4 border-cyber-cyan/50 shadow-xl`}>
                                         <img 
                                             src={profileImg} 
-                                            alt="Umair Khan"
+                                            alt="Zeenat Ali"
                                             className="w-full h-full object-cover"
                                             loading="lazy"
                                         />

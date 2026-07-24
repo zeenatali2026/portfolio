@@ -32,7 +32,7 @@ socket.on('message', (data) => {
       
       <p>With Socket.io, you can build anything from simple chat apps to complex collaborative tools like Google Docs!</p>
     `,
-    author: 'Umair Khan',
+    author: 'Zeenat Ali',
     authorAvatar: 'https://placehold.co/40x40',
     date: '2024-02-15',
     readTime: '5 min read',
@@ -71,7 +71,7 @@ socket.on('message', (data) => {
       
       <p>Mastering aggregation pipeline will take your MongoDB skills to the next level!</p>
     `,
-    author: 'Umair Khan',
+    author: 'Zeenat Ali',
     authorAvatar: 'https://placehold.co/40x40',
     date: '2024-02-10',
     readTime: '7 min read',
@@ -117,7 +117,7 @@ const token = jwt.sign({ userId: user._id }, process.env.JWT_SECRET, {
       
       <p>Remember to always use HTTPS in production and implement rate limiting!</p>
     `,
-    author: 'Umair Khan',
+    author: 'Zeenat Ali',
     authorAvatar: 'https://placehold.co/40x40',
     date: '2024-02-05',
     readTime: '6 min read',
@@ -154,7 +154,7 @@ const memoizedCallback = useCallback(() => doSomething(a, b), [a, b]);</code></p
       
       <p>These techniques can significantly improve your app's performance and user experience!</p>
     `,
-    author: 'Umair Khan',
+    author: 'Zeenat Ali',
     authorAvatar: 'https://placehold.co/40x40',
     date: '2024-01-28',
     readTime: '8 min read',
@@ -193,7 +193,7 @@ npx tailwindcss init -p</code></pre>
       
       <p>Tailwind makes development faster and more enjoyable. Give it a try!</p>
     `,
-    author: 'Umair Khan',
+    author: 'Zeenat Ali',
     authorAvatar: 'https://placehold.co/40x40',
     date: '2024-01-20',
     readTime: '4 min read',

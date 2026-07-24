@@ -38,21 +38,21 @@ const ContactPage = () => {
     {
       icon: Mail,
       title: 'Email',
-      value: 'mrumairkhan74@gmail.com',
-      link: 'mailto:mrumairkhan74@gmail.com',
+      value: 'zeenatali2026@gmail.com',
+      link: 'mailto:zeenatali2026@gmail.com',
       color: '#00F0FF'
     },
     {
       icon: Phone,
       title: 'Phone',
-      value: '+92 347 6985088',
-      link: 'tel:+923476985088',
+      value: '+92 328 5638169',
+      link: 'tel:+923285638169',
       color: '#8B5CF6'
     },
     {
       icon: MapPin,
       title: 'Location',
-      value: 'Jand, Attock, Pakistan',
+      value: 'Rangli, Attock, Pakistan',
       link: null,
       color: '#EC4899'
     },

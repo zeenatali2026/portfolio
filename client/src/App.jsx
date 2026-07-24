@@ -13,8 +13,8 @@ const ProjectDetailsPage = lazy(() => import('./components/ProjectDetails'));
 const LoginPage = lazy(() => import('./pages/Login'));
 const AdminDashboard = lazy(() => import('./pages/AdminDashboard'));
 const Projects = lazy(() => import('./pages/Projects'));
-const Blog = lazy(() => import('./pages/Blog'));
-const BlogPost = lazy(() => import('./pages/BlogPost'));
+// const Blog = lazy(() => import('./pages/Blog'));
+// const BlogPost = lazy(() => import('./pages/BlogPost'));
 
 const PageLoader = () => (
   <div className="min-h-screen flex items-center justify-center bg-dark-primary">
@@ -104,8 +104,7 @@ function AppContent() {
               <Route path="/project/:id" element={<ProjectDetailsPage />} />
               <Route path="/login" element={<LoginPage />} />
               <Route path="/admin" element={<AdminDashboard />} />
-              <Route path="/blog" element={<Blog />} />
-              <Route path="/blog/:id" element={<BlogPost />} />
+   
             </Routes>
           </div>
         </Suspense>

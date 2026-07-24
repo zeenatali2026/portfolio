@@ -182,7 +182,7 @@ const Loading = ({ onComplete }) => {
                 )}
                 
                 <h1 className="relative text-3xl md:text-7xl font-bold bg-gradient-to-r from-cyber-cyan via-cyber-purple to-cyber-pink bg-clip-text text-transparent">
-                  Umair Khan
+                  Zeenat Ali
                 </h1>
                 
                 <motion.div
@@ -200,7 +200,7 @@ const Loading = ({ onComplete }) => {
                 transition={{ delay: 0.3 }}
                 className="text-cyber-cyan/80 font-mono text-xs md:text-sm mt-2 md:mt-4"
               >
-                MERN Stack Developer
+                Professional Graphic Gesigner
               </motion.p>
             </motion.div>
 
@@ -218,7 +218,7 @@ const Loading = ({ onComplete }) => {
                 <div className="relative px-4 md:px-6 py-1.5 md:py-2 rounded-full bg-black/40 backdrop-blur-sm border border-cyber-cyan/30">
                   <span className="text-cyber-cyan font-mono text-[10px] md:text-sm tracking-wider flex items-center gap-1 md:gap-2">
                     <span className="w-1.5 h-1.5 rounded-full bg-cyber-cyan animate-pulse" />
-                    FULL STACK DEVELOPER
+                    Professional Graphic Designer
                     <span className="w-1.5 h-1.5 rounded-full bg-cyber-pink animate-pulse delay-150" />
                   </span>
                 </div>

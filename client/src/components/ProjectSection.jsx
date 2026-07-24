@@ -18,88 +18,73 @@ import {
 export const projectsData = [
     {
         _id: '1',
-        title: 'Wuddy - Social + Professional Network',
-        description: 'Real-time chat, communities, and professional networking platform.',
-        fullDescription: 'Wuddy is a comprehensive social + professional networking web app where users can connect, chat, and collaborate in real time.',
-        technologies: ['React', 'Node.js', 'Express', 'MongoDB', 'Socket.io', 'Redux Toolkit', 'Tailwind CSS', 'JWT'],
-        imageUrl: 'https://placehold.co/600x400/1a1a2e/00F0FF?text=Wuddy',
+        title: 'Professional-Graphic Designer',
+        description: 'Real-time chat, communities, and professional Desingning platform.',
+        fullDescription: 'I am creating all social media poster,boster,flywers and thumbnail on canva, photoshop,Nanobanana and other platform.',
+        technologies: ['Canva', 'Nanobanana', 'Adobe Express', 'PicsArt', 'Ibis Paint X', 'Adobe Photoshop', 'Adobe Illustrator', ],
+        imageUrl: './1.png',
         likes: 15,
         comments: [
             { id: 1, author: 'TechRecruiter', text: 'Great platform!', date: '2024-02-10' },
             { id: 2, author: 'DevCommunity', text: 'Love the features!', date: '2024-02-05' }
         ],
-        githubUrl: 'https://github.com/mrumairkhan74/Wuddy',
-        liveUrl: 'https://wuddy.vercel.app',
-        category: 'Full Stack',
+        githubUrl: '',
+        liveUrl: '',
+        category: 'Professional Graphic Designer',
         featured: true,
         date: '2024-02-01'
     },
     {
         _id: '2',
-        title: 'GeariX - Automotive E-commerce',
-        description: 'Full-featured e-commerce platform for automotive parts with Stripe payment integration.',
-        fullDescription: 'Complete e-commerce solution for automotive parts and accessories with secure payment processing.',
-        technologies: ['React', 'Node.js', 'Express', 'MongoDB', 'Stripe API', 'Redux', 'CSS3'],
-        imageUrl: 'https://placehold.co/600x400/1a1a2e/8B5CF6?text=GeariX',
+        title: 'Web Development',
+        description: 'I build modern, responsive and user-friendly websites that help business grow online clean code.Great design.Better experience.',
+        fullDescription: 'I build modern, responsive and user-friendly websites that help business grow online clean code.Great design.Better experience.And finally i used languages likes Html,CSS,Javascript.',
+        technologies: ['Html', 'Java script', 'CSS', 'Git& Github', 'PHP', 'Redux'],
+        imageUrl: './2.png',
         likes: 23,
         comments: [
             { id: 1, author: 'ShopOwner', text: 'Payment integration is seamless!', date: '2024-01-28' }
         ],
-        githubUrl: 'https://github.com/mrumairkhan74/GeariX',
+        githubUrl: 'https://github.com/zeenatali2026/GeariX',
         liveUrl: 'https://gearix.vercel.app',
-        category: 'E-commerce',
+        category: 'Web Development',
         featured: true,
         date: '2024-01-25'
     },
     {
         _id: '3',
-        title: 'We Chat - Real-time Messenger',
-        description: 'Real-time messaging app with one-to-one and group chat functionality.',
-        fullDescription: 'Modern messaging platform supporting one-to-one and group conversations with real-time updates.',
-        technologies: ['React', 'Express', 'MongoDB', 'Socket.io', 'Node.js', 'CSS3'],
-        imageUrl: 'https://placehold.co/600x400/1a1a2e/EC4899?text=We+Chat',
+        title: 'Professional Video Editor',
+        description: 'Edit your story makeit epic.',
+        fullDescription: 'I creating professional video and editing video professional.',
+        technologies: ['Cupcut', 'Kavicut', 'After Affect',],
+        imageUrl: './3.png',
         likes: 34,
         comments: [
             { id: 1, author: 'MessengerUser', text: 'Super fast updates!', date: '2024-01-20' },
             { id: 2, author: 'TeamLead', text: 'Group chat works perfectly!', date: '2024-01-18' }
         ],
-        githubUrl: 'https://github.com/mrumairkhan74/WeChat',
+        githubUrl: 'https://github.com/zeenatali2026/WeChat',
         liveUrl: 'https://wechat.vercel.app',
-        category: 'Real-time',
+        category: 'Professional Video Editor',
         featured: true,
         date: '2024-01-15'
     },
     {
         _id: '4',
-        title: 'TrackMantis - Issue Tracker',
-        description: 'Project management tool with analytics dashboard.',
-        fullDescription: 'Comprehensive issue tracking and project management tool with analytics dashboard.',
-        technologies: ['MERN', 'JWT', 'Charts.js', 'Tailwind CSS', 'MongoDB', 'Express'],
-        imageUrl: 'https://placehold.co/600x400/1a1a2e/00F0FF?text=TrackMantis',
+        title: 'Freelancing',
+        description: 'As a Freelancer,I specialize in Graphic Design, Video Editing,Typography,and responsive Web Development.',
+        fullDescription: 'As a Freelancer,I specialize in Graphic Design, Video Editing,Typography,and responsive Web Development.',
+        technologies: ['Upwork', 'Fiver'],
+        imageUrl: './4.png',
         likes: 19,
         comments: [
             { id: 1, author: 'ProjectManager', text: 'Analytics dashboard is very helpful!', date: '2024-01-12' }
         ],
-        githubUrl: 'https://github.com/mrumairkhan74/TrackMantis',
+        githubUrl: 'https://github.com/zeenatali2026/TrackMantis',
         liveUrl: 'https://trackmantis.vercel.app',
-        category: 'Productivity',
+        category: 'Freelancing',
         featured: false,
         date: '2024-01-10'
-    },
-    {
-        _id: '5',
-        title: 'C-News - News Aggregator',
-        description: 'Curated news platform aggregating content from multiple sources.',
-        fullDescription: 'Modern news aggregator that fetches and displays curated news from multiple APIs.',
-        technologies: ['React', 'REST API', 'CSS3', 'News API', 'Responsive Design'],
-        imageUrl: 'https://placehold.co/600x400/1a1a2e/8B5CF6?text=C-News',
-        likes: 12,
-        comments: [],
-        githubUrl: 'https://github.com/mrumairkhan74/C-News',
-        liveUrl: 'https://cnews-frontend.vercel.app',
-        category: 'Frontend',
-        featured: false,
-        date: '2024-01-05'
     },
 ];
 
@@ -201,7 +186,7 @@ const ProjectsSection = () => {
                                             <img
                                                 src={project.imageUrl}
                                                 alt={project.title}
-                                                className="w-full h-32 md:h-48 object-cover transition-transform duration-500 group-hover:scale-110"
+                                                className="w-full h-32 md:h-48 object-fit transition-transform duration-500 group-hover:scale-110"
                                                 loading="lazy"
                                             />
                                             <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
