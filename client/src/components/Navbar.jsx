@@ -152,7 +152,7 @@ const Navbar = () => {
                       ? 'from-cyber-cyan via-cyber-purple to-cyber-pink'
                       : 'from-cyan-600 via-purple-600 to-pink-600'
                     } bg-clip-text text-transparent`}>
-                    UK
+                   ZA
                   </span>
                 )}
               </motion.div>
